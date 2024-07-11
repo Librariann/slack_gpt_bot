@@ -25,7 +25,8 @@ slackApp.event('app_mention', async ({ event, say }) => {
   try {
     const question = event.text;
     const answer = await chatGPT(question);
-    await say(answer);
+    // const answer = 'Test';
+    await say(`<@${event.user}> ${answer}`);
   } catch (error) {
     console.error(error);
   }
