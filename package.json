@@ -1,12 +1,14 @@
 {
   "name": "slack_bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "dev:start": "nodemon src/main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/main.js"
+
   },
   "repository": {
     "type": "git",
