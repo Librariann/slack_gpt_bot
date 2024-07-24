@@ -16,7 +16,7 @@ export const chatGPT = async (text: string): Promise<string> => {
   const question = text;
   const chatCompletion = await openai.chat.completions.create({
     messages: [{ role: 'user', content: question }],
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o-mini',
     stream: true,
   });
 
