@@ -122,3 +122,6 @@ ehthumbs.db
 .env.local
 .env.test
 .env.production
+
+#pm2 ecosystem
+.ecosystem.config.js
